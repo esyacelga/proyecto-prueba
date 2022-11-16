@@ -1,4 +1,6 @@
 # proyecto-prueba
-## Instacion
+## Instalacion
 npm install
-npm run start:dev
+
+## Run docker
+docker run -it -p 4000:3005 node-prueba-api
