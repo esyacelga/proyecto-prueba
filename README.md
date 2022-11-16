@@ -12,6 +12,9 @@ npm run develop
 ## Ejecución build docker
 docker build -t node-prueba-api .
 
-## Ejecución docker
+## Ejecución docker iterativo
 docker run -it -p 4000:3005 node-prueba-api
+
+## Ejecución docker segundo plano
+docker run -d -p 4000:3005 node-prueba-api
 
