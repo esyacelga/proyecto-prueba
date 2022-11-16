@@ -104,14 +104,14 @@ const crearPersona = async (req, res = response) => {
     const {nombre, apellido, edad, telefono, email} = req.body;
     try {
         const persona = new Persona(req.body);
-        const existeEmail = await Persona.findOne({email});
+ /*       const existeEmail = await Persona.findOne({email});
         if (existeEmail) {
             return res.status(400).json({
                 ok: false,
                 msg: 'El correo ya esta registrado'
             })
         }
-
+*/
         await persona.save();
         res.json({
             ok: true,

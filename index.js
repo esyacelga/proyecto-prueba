@@ -7,9 +7,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 dbConnection();
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Hello word'
+    })
+})
 app.use('/api/persona', require('./routes/route-persona'));
-
-
 
 
 app.listen(process.env.PORT, () => {
