@@ -51,9 +51,11 @@ describe("Actualiza una persona", function () {
             telefono: '022873122',
             email: 'marth0211@yacelga.com'
         }
-        const response = await request('localhost:' + process.env.PORT).put('/api/persona/637413da990568b8ff2bd0a0').send(personaNueva);
+        const response = await request('localhost:' + process.env.PORT).put('/api/persona/637413de990568b8ff2bd0a3').send(personaNueva);
         expect(response.status).toBe(200);
     }, 10000);
 });
+
+
 
 
